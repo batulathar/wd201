@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>User Survey Form</title>
+</head>
+
+<body>
+    <div class="min-h-screen flex flex-col justify-center py-8 overflow-hidden bg-gray-100">
+        <div
+            class="mx-auto bg-white shadow-md ring-1 ring-gray-200 rounded-lg p-8" style="width:80%" >
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-6">
+                    User Survey Form
+                </h2>
+                <div class="divide-y divide-gray-200">
+                    <div class="py-6 space-y-4">
+                        <form id="user_form" action="#" method="post">
+                            <label for="name" class="block font-medium text-gray-800">
+                                Full Name
+                            </label>
+                            <input required type="text" id="name" name="name" class="block w-full mt-2 p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+                                placeholder="Your Name"></br>
+
+                            <label for="email" class="block font-medium text-gray-800">
+                                Email Address
+                            </label>
+                            <input required type="email" id="email" name="email" class="block w-full mt-2 p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+                                placeholder="Email Address"></br>
+
+                            <label for="password" class="block font-medium text-gray-800">
+                                Create Password
+                            </label>
+                            <input required type="password" id="password" name="password" class="block w-full mt-2 p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"
+                                placeholder="Password"></br>
+
+                            <label for="dob" class="block font-medium text-gray-800">
+                                Date of Birth
+                            </label>
+                            <input required type="date" id="dob" name="dob" class="block w-full mt-2 p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300"></br>
+
+                            <div class="flex items-center mt-4">
+                                <input required type="checkbox" id="acceptTerms" name="acceptTerms"
+                                    class="rounded-md border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <label for="acceptTerms" class="ml-2 text-gray-800">
+                                    I accept the Terms & Conditions
+                                </label>
+                            </div></br>
+
+                            <button type="submit" 
+                                class="mt-4 w-full py-3 text-white bg-blue-500 hover:bg-blue-400 rounded-lg shadow focus:outline-none focus:ring focus:ring-blue-300 transition ease-in-out">
+                                Submit Form
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="mx-auto mt-8 bg-white shadow-lg ring-1 ring-gray-200 rounded-lg p-8" style="width:80%">
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">
+                    Survey Entries
+                </h2>
+                <div class="divide-y divide-gray-200" id="user-entries">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="registration.js"></script>    
+</body>
+
+</html>
